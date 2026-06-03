@@ -12,9 +12,9 @@ The work was completed using SAP training systems with access to IMG/SPRO custom
 
 ## Modules
 
-1. SAP Financial Accounting (FI)
-2. SAP Financial Accounting & Controlling (FI/CO)
-3. SAP Materials Management (MM)
+1. SAP Financial Accounting & Controlling (FI/CO)
+2. SAP Materials Management (MM)
+3. SAP Production Planning (PP)
 4. SAP ABAP
 5. SAP Human Capital Management (HCM)
 
@@ -189,8 +189,91 @@ Material Number: CHSP1157
 - Procure-to-Pay Process
 
 ---
+# 4. SAP Production Planning (PP)
 
-# 4. SAP ABAP
+## Project Objective
+
+Implementation of core Production Planning processes in SAP ERP, including material planning, bill of materials management, work center configuration, routing setup, production order processing, and manufacturing execution.
+
+## Business Scenario
+
+The project simulates a manufacturing environment where finished products are planned, produced, and monitored using SAP Production Planning.
+
+The objective is to manage the complete production cycle from demand planning through production execution and goods receipt.
+
+## Activities Performed
+
+| No | Activity                                            |
+| -- | --------------------------------------------------- |
+| 1  | Define Production Planning Organizational Structure |
+| 2  | Create Material Master for Finished Goods           |
+| 3  | Create Material Master for Raw Materials            |
+| 4  | Create Bill of Materials (BOM)                      |
+| 5  | Create Work Centers                                 |
+| 6  | Create Routings                                     |
+| 7  | Create Production Version                           |
+| 8  | Execute Material Requirements Planning (MRP)        |
+| 9  | Convert Planned Orders                              |
+| 10 | Create Production Orders                            |
+| 11 | Release Production Orders                           |
+| 12 | Confirm Production Operations                       |
+| 13 | Post Goods Receipt for Finished Products            |
+| 14 | Analyze Production Planning Results                 |
+
+## SAP Transactions Used
+
+| Activity           | Transaction |
+| ------------------ | ----------- |
+| Material Master    | MM01        |
+| Bill of Materials  | CS01        |
+| Work Center        | CR01        |
+| Routing            | CA01        |
+| Production Version | C223        |
+| MRP Run            | MD01 / MD02 |
+| Planned Order      | MD11        |
+| Production Order   | CO01        |
+| Order Confirmation | CO11N       |
+| Goods Receipt      | MIGO        |
+
+## Production Planning Process
+
+1. Create Material Master Records
+2. Create Bill of Materials (BOM)
+3. Create Work Centers
+4. Create Routings
+5. Maintain Production Versions
+6. Run Material Requirements Planning (MRP)
+7. Generate Planned Orders
+8. Convert Planned Orders into Production Orders
+9. Release Production Orders
+10. Confirm Production Activities
+11. Receive Finished Goods into Inventory
+
+## SAP Areas Covered
+
+* Production Planning (PP)
+* Material Requirements Planning (MRP)
+* Bill of Materials (BOM)
+* Work Centers
+* Routings
+* Production Orders
+* Shop Floor Control
+* Capacity Planning
+* Manufacturing Execution
+* Inventory Integration
+
+## Learning Outcomes
+
+* Understanding end-to-end manufacturing processes in SAP.
+* Managing production master data.
+* Executing MRP runs and production planning activities.
+* Creating and processing production orders.
+* Integrating production with inventory management.
+* Monitoring production execution and confirmations.
+
+
+
+# 5. SAP ABAP
 
 ## Project Objective
 
@@ -212,7 +295,7 @@ ABAP development exercises including report development, data retrieval, screen 
 
 ---
 
-# 5. SAP Human Capital Management (HCM)
+# 6. SAP Human Capital Management (HCM)
 
 ## Project Objective
 
@@ -278,12 +361,7 @@ SAP-ERP-Projects
 
 Master's Degree in ERP  
 Accounting & ERP Professional  
-SAP FI | MM | CO | HCM | ABAP
-
-## Author
-
-Ashek Alahi
-Accounting & ERP Background  
+SAP FICO |MM  | PP | HCM | ABAP 
 Interested in SAP S/4HANA, ERP Consulting, Business Analytics, and Financial Systems
 
 GitHub: [Ashek-Alahi GitHub Profile](https://github.com/Ashek-Alahi?utm_source=chatgpt.com)
