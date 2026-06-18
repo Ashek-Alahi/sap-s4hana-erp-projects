@@ -31,7 +31,7 @@ flowchart TD
 |---|---|---|
 | `sql/01_fi_open_items.sql` | Query open vendor and customer balances | Supports payment and collection monitoring |
 | `sql/02_mm_three_way_match.sql` | Compare PO, GR, and invoice quantities/amounts | Detects procurement exceptions |
-| `sql/03_pp_production_variance.sql` | Compare planned and actual production | Measures production execution performance |
+| `sql/03_pp_production_variance.sql` | Compare target and actual production | Measures production execution performance |
 | `sql/04_co_cost_center_actuals.sql` | Summarize cost center actual postings | Supports cost control and management reporting |
 
 ### Example SQL Questions to Answer
@@ -40,7 +40,7 @@ flowchart TD
 2. Which customers have outstanding balances by aging bucket?
 3. Which purchase orders have quantity differences between PO, GR, and invoice?
 4. Which cost centers have the highest actual expenses?
-5. Which production orders delivered less than the planned quantity?
+5. Which production orders delivered less than the target quantity?
 
 ---
 
@@ -76,7 +76,7 @@ flowchart TD
 | Executive Overview | Management | Open A/R, open A/P, procurement exceptions, production completion |
 | Finance | Accounting team | Vendor balances, customer balances, cost center actuals |
 | Procurement | Purchasing team | PO cycle time, three-way match exceptions, vendor price variance |
-| Production | Operations team | Planned vs. produced quantity, shortages, finished goods receipt |
+| Production | Operations team | Target vs. produced quantity, shortages, finished goods receipt |
 | HR | HR team | Qualification coverage, hiring actions, position structure |
 
 ---

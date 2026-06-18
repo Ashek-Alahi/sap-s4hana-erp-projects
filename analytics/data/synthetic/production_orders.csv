@@ -1,0 +1,4 @@
+production_order_id,plant,material_id,order_date,planned_quantity,actual_quantity,status,synthetic_data_note
+100001,DL00,FG-BIKE-01,2026-02-01,80,80,Completed,Synthetic SAP-style sample data only
+100002,DL00,FG-BIKE-02,2026-02-05,120,110,Confirmed with variance,Synthetic SAP-style sample data only
+100003,MI00,FG-LOCK-KIT,2026-02-10,150,135,Confirmed with variance,Synthetic SAP-style sample data only

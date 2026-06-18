@@ -1,52 +1,54 @@
-# SAP ABAP: Customer Accounts Receivable Reporting System
+# SAP ABAP Academic Reporting Design Project
 
-> Final Project | ERP Business Application Development | Spring 2024  
-> Developed in SAP S/4HANA using ABAP and ALV Grid Display
+## Portfolio Summary
+This ABAP project presents academic reporting designs for FI-focused reports. It shows how SAP tables, selection screens, joins, and ALV-style output can support accounting users without claiming full exported production source code.
 
-## Overview
+## Business Problem
+Accounting users often need focused reports that filter by company code, customer, vendor, clearing status, and posting details. Standard reports may require multiple screens or manual reconciliation, so report design skills are valuable for ERP reporting support.
 
-Built two custom ABAP programs to extract, join, and display financial 
-data from SAP's core FI/SD tables — solving a real business need: 
-giving accounting teams fast, filterable visibility into cleared 
-customer invoices without relying on standard transaction reports.
+## Process Scope
+- Define A/R cleared items report requirements.
+- Define customer detail report requirements.
+- Define A/P cleared items report requirements.
+- Map business questions to SAP tables and joins.
+- Define selection-screen filters.
+- Define output fields for accounting review.
+- Document ALV-style reporting behavior and drilldown use cases.
 
-## Business Problem Addressed
+## SAP Configuration / Execution Evidence
+- Report programs are documented in the academic PDF as project outputs.
+- Report designs are documented in [`report_design/`](report_design/).
+- Tables documented include `KNA1`, `BSAD`, `LFA1`, and `BSAK`.
+- Educational sample code, if reviewed, is labeled as reconstructed design material rather than exported source from a production SAP system.
 
-Standard SAP A/R reports lack flexible filtering by both company code 
-and customer range simultaneously. These programs fill that gap by 
-pulling cleared items from BSAD joined with customer master data 
-from KNA1, surfacing actionable financial data in ALV format.
+## Business Value
+ABAP reporting matters because ERP users need reliable visibility into cleared items, customer activity, vendor payments, and accounting exceptions. A strong report design connects business filters to the right SAP tables and output fields.
 
-## Technical Implementation
+## KPIs / Controls
+- Report filter coverage.
+- Cleared item visibility.
+- Customer drilldown.
+- Vendor drilldown.
+- Field-level reconciliation usability.
+- Selection-screen completeness.
 
-| Program | Transaction | Purpose |
-|---|---|---|
-| Z_245_1306 | Program 01 | A/R cleared items report — filterable by company code & customer range, ALV output |
-| Z_245_1307 | Program 02 | Customer-level detail report — shows debit/credit line items with G/L account and clearing document |
-| Z1_245_1307 | Program 03 | Accounts Payable cleared items — vendor-level report with posting key indicators |
+## Interview Defense
+- **Q: What did you build in ABAP?** A: The portfolio documents academic ABAP report designs for A/R cleared items, customer detail, and A/P cleared items, supported by PDF evidence.
+- **Q: Are you claiming exported SAP source code?** A: No. The public repo focuses on documented design logic and educational samples where applicable.
+- **Q: Why join master and line-item tables?** A: Line-item tables provide transaction details, while master tables provide readable customer or vendor context.
+- **Q: What is the purpose of selection screens?** A: They let users filter by company code, account ranges, dates, and clearing status so the report answers a specific business question.
+- **Q: Why use ALV-style output?** A: It gives business users sortable and filterable tabular results suitable for accounting review.
 
-**Key SAP Tables Used:**
-- `KNA1` — Customer Master (general data: name, address, country)
-- `BSAD` — A/R Cleared Items (document number, clearing date, amount)
-- `LFA1` / `BSAK` — Vendor Master & A/P Cleared Items (Program 03)
+## Limitations
+- Academic training-system scenario.
+- Not production implementation.
+- No company-sensitive data.
+- Synthetic analytics data is used only in the separate analytics extension.
+- PDF evidence may contain academic identifiers from the original coursework.
+- Public repository does not claim complete exported SAP source code.
 
-**ABAP Concepts Applied:**
-- SELECT with JOIN across FI and SD tables
-- SELECT-OPTIONS for dynamic range filtering
-- ALV Grid (REUSE_ALV_GRID_DISPLAY) for interactive output
-- Internal tables and field catalog configuration
-
-## Sample Output
-
-Program 01 retrieves all cleared A/R documents for company US00,  
-displaying customer number, name, document number, posting date,  
-debit/credit indicator, and clearing document in ALV format.
-
-Program 02 drills into individual customer accounts (e.g., Customer 5997 
-— Beantown Bikes, Boston) showing matched debit/credit pairs confirming 
-full invoice clearance.
-
-## Skills Demonstrated
-
-`SAP ABAP` `ALV Reporting` `FI Module` `SD Module` `Table Joins` 
-`Accounts Receivable` `Financial Reporting` `ERP Customization`
+## Evidence Files
+- `ABAP Final project pdf.pdf`
+- [`report_design/ar_cleared_items_report_design.md`](report_design/ar_cleared_items_report_design.md)
+- [`report_design/customer_detail_report_design.md`](report_design/customer_detail_report_design.md)
+- [`report_design/ap_cleared_items_report_design.md`](report_design/ap_cleared_items_report_design.md)

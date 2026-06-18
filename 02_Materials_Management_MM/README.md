@@ -1,59 +1,55 @@
-# SAP S/4HANA Material Management (MM) – Procure-to-Pay Implementation
+# SAP MM Academic Procure-to-Pay Project
 
-## Overview
-End-to-end implementation of the Procure-to-Pay (P2P) business process 
-in SAP S/4HANA MM module, completed as a final project for MSc in ERP 
-studies. Executed on a live SAP S/4HANA training environment using the 
-Global Bike Inc. (GBI) dataset.
+## Portfolio Summary
+This MM project demonstrates procure-to-pay execution in an SAP S/4HANA academic training system, including sourcing, purchasing, goods receipt, invoice verification, payment clearing, and procurement control analysis.
 
-## Business Scenario
-Procurement of **Chain Lock Security Pro 157 (CHSP1157)** for Global 
-Bike Inc., involving vendor selection through competitive quotation and 
-full payment cycle execution.
+## Business Problem
+Procurement teams need controlled purchasing from vendor selection through payment. Weak controls can create duplicate purchases, inventory discrepancies, invoice mismatches, and inaccurate vendor liabilities.
 
-## Process Flow Implemented
+## Process Scope
+- Create vendor master data.
+- Create material master data for Chain Lock Security Pro 157 (`CHSP1157`).
+- Create purchase requisition.
+- Create RFQs for vendor comparison.
+- Compare quotations and select vendor.
+- Create purchase order.
+- Post goods receipt.
+- Enter vendor invoice with invoice verification.
+- Maintain purchasing info record.
+- Execute vendor payment and confirm clearing.
+- Analyze duplicate PO inventory discrepancy as a control-risk finding.
 
-| Step | Transaction Code | Document Created |
-|------|-----------------|-----------------|
-| Vendor Master Creation | XK01 | Vendor 125561, 125562 |
-| Material Master Creation | MMH1 | Material CHSP1157 |
-| Purchase Requisition | ME51N | PR 0010000233 |
-| Request for Quotation (×2) | ME41 | RFQ 6000000534, 6000000536 |
-| Price Comparison & Vendor Selection | ME49 | Rejected high-price vendor |
-| Purchase Order | ME21N | PO 4500000402 |
-| Goods Receipt | MIGO_GR | Material Doc 5000000691 |
-| Invoice Verification | MIRO | Invoice Doc 5105600443, 5105600445 |
-| Purchasing Info Record | ME11 | Info Record 5300000378 |
-| Vendor Payment | F-53 / Fiori | Payment Doc 1500000444 |
+## SAP Configuration / Execution Evidence
+- Transactions documented include `XK01`, `MMH1`, `ME51N`, `ME41`, `ME49`, `ME21N`, `MIGO`, `MIRO`, `ME11`, and `F-53`.
+- Process evidence includes vendor creation, material creation, RFQ, quotation comparison, PO, goods receipt, vendor invoice, info record, and payment clearing.
+- The duplicate PO inventory discrepancy is documented as a procurement and inventory control risk.
+- Relevant SAP tables for analytics discussion include `EKKO`, `EKPO`, `MKPF`, `MSEG`, `RBKP`, and `RSEG`.
 
-## Key Concepts Demonstrated
-- MM organizational structure: Client → Company Code → Plant → 
-  Storage Location
-- Master data management: Vendor master, Material master, 
-  Purchasing Info Record
-- Competitive sourcing: RFQ creation, quotation comparison, 
-  vendor rejection workflow
-- Three-way matching: PO → Goods Receipt → Invoice verification
-- Financial integration: Automatic G/L posting upon GR and 
-  invoice, vendor account clearing
+## Business Value
+MM matters because it protects company cash and inventory. A controlled P2P process helps ensure the company buys from the right vendor, receives the right quantity, pays the right invoice, and identifies exceptions before they affect financial statements or operations.
 
-## Technical Environment
-- **System:** SAP S/4HANA (UWM training instance)  
-- **Company Code:** US00 (Global Bike Inc.)  
-- **Purchasing Org:** US00 | **Plant:** MI00  
-- **UI:** SAP GUI + SAP Fiori
+## KPIs / Controls
+- PO-to-GR cycle monitoring.
+- Three-way match exception review.
+- Vendor price variance.
+- Duplicate PO risk.
+- GR/IR reconciliation.
+- Vendor comparison documentation.
+- Payment clearing status.
 
-## Outcomes & Observations
-- Successfully executed full P2P cycle from vendor onboarding to 
-  payment clearing
-- Identified and documented a data discrepancy: stock showed 300 
-  units (unrestricted) vs. expected 150 due to an erroneous 
-  duplicate purchase order — demonstrating understanding of how 
-  incorrect PO postings affect inventory valuation
-- Vendor balance cleared to 0.00 USD post-payment, confirming 
-  correct financial accounting integration
+## Interview Defense
+- **Q: What is procure-to-pay?** A: It is the end-to-end process from purchase need through supplier selection, PO, goods receipt, invoice verification, and vendor payment.
+- **Q: Why is three-way matching important?** A: It compares PO, goods receipt, and invoice so companies do not pay for incorrect prices or quantities.
+- **Q: How would you explain the duplicate PO issue?** A: I would present it as a control-risk finding because duplicate purchasing can overstate stock and create payment or reconciliation issues.
+- **Q: What does GR/IR represent?** A: GR/IR is a clearing concept used when goods receipt and invoice receipt occur at different times and need reconciliation.
+- **Q: What business value did vendor comparison add?** A: It showed sourcing discipline by comparing quotations before committing to a purchase order.
 
-## Skills Applied
-`SAP S/4HANA` `MM Module` `Procure-to-Pay` `Vendor Management` 
-`Inventory Management` `SAP Fiori` `Financial Accounting Integration` 
-`Master Data Management`
+## Limitations
+- Academic training-system scenario.
+- Not production implementation.
+- No company-sensitive data.
+- Synthetic analytics data is used only in the separate analytics extension.
+- PDF evidence may contain academic identifiers from the original coursework.
+
+## Evidence Files
+- `Final project MM.pdf`

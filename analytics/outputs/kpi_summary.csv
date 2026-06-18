@@ -1,0 +1,12 @@
+account_type,actual_quantity,balance_amount,company_code,completion_rate,controlling_area,cost_center,kpi_area,material_id,planned_quantity,plant,production_order_id,quantity_variance,status,total_actual_expense
+AR,,12500.0,US00,,,,FI_AR_AP_BALANCE,,,,,,Cleared,
+AR,,13700.0,US00,,,,FI_AR_AP_BALANCE,,,,,,Open,
+AP,,15900.0,US00,,,,FI_AR_AP_BALANCE,,,,,,Cleared,
+AP,,4100.0,US00,,,,FI_AR_AP_BALANCE,,,,,,Open,
+,80,,,1.0,,,PP_PRODUCTION_VARIANCE,FG-BIKE-01,80,DL00,100001,0.0,Completed,
+,110,,,0.9167,,,PP_PRODUCTION_VARIANCE,FG-BIKE-02,120,DL00,100002,-10.0,Confirmed with variance,
+,135,,,0.9,,,PP_PRODUCTION_VARIANCE,FG-LOCK-KIT,150,MI00,100003,-15.0,Confirmed with variance,
+,,,,,NA00,CC-FIN,CO_COST_CENTER_ACTUALS,,,,,,,3200.0
+,,,,,NA00,CC-PROC,CO_COST_CENTER_ACTUALS,,,,,,,4700.0
+,,,,,NA00,CC-MFG,CO_COST_CENTER_ACTUALS,,,,,,,33000.0
+,,,,,NA00,CC-HR,CO_COST_CENTER_ACTUALS,,,,,,,2600.0

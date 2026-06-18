@@ -1,0 +1,5 @@
+po_id,company_code,vendor_id,material_id,po_date,po_quantity,po_unit_price,currency,synthetic_data_note
+450000001,US00,V2000,RM-CHAIN,2026-01-10,100,20,USD,Synthetic SAP-style sample data only
+450000002,US00,V2001,RM-LOCK,2026-01-14,150,18,USD,Synthetic SAP-style sample data only
+450000003,US00,V2002,RM-TIRE,2026-01-20,200,25,USD,Synthetic SAP-style sample data only
+450000004,US00,V2000,RM-CHAIN,2026-01-11,100,20,USD,Synthetic SAP-style sample data only
