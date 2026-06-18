@@ -38,13 +38,6 @@ PP matters because it links demand, materials, production capacity, and inventor
 - Goods issue accuracy.
 - Confirmation yield.
 
-## Interview Defense
-- **Q: What is make-to-stock planning?** A: It is production based on expected demand, where finished goods are produced for inventory before a specific sales order is required.
-- **Q: Why are BOM and routing important?** A: The BOM defines required components, while routing defines the operations and work centers needed to build the product.
-- **Q: What does MRP do?** A: MRP compares demand, stock, and supply elements to create procurement or production proposals.
-- **Q: Why post goods issue to a production order?** A: Goods issue records component consumption and connects inventory reduction to the production order.
-- **Q: What proves production completion?** A: Confirmation records yield and operational completion, and goods receipt increases finished goods inventory.
-
 ## Limitations
 - Academic training-system scenario.
 - Not production implementation.

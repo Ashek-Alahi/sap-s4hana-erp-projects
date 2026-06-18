@@ -39,13 +39,6 @@ FI/CO matters because it converts operational activity into accounting records a
 - Posting period and document type control.
 - FI-MM and FI-SD reconciliation checks.
 
-## Interview Defense
-- **Q: What is the difference between G/L, A/P, and A/R?** A: G/L is the central ledger, A/P tracks vendor obligations, and A/R tracks customer receivables; subledger activity reconciles back to G/L accounts.
-- **Q: Why do payments matter after invoice posting?** A: Payment posting clears open items and changes the financial position from payable or receivable exposure to cash movement.
-- **Q: What did the cost center work prove?** A: It showed how expenses can be assigned and allocated for management accounting, not just external financial reporting.
-- **Q: How does FI integrate with MM?** A: Goods receipts and invoice verification create accounting impacts through inventory, GR/IR, and vendor liability accounts.
-- **Q: How does FI integrate with SD?** A: Billing and incoming payment activity affect customer receivables, revenue-related accounts, and cleared item reporting.
-
 ## Limitations
 - Academic training-system scenario.
 - Not production implementation.

@@ -32,13 +32,6 @@ ABAP reporting matters because ERP users need reliable visibility into cleared i
 - Field-level reconciliation usability.
 - Selection-screen completeness.
 
-## Interview Defense
-- **Q: What did you build in ABAP?** A: The portfolio documents academic ABAP report designs for A/R cleared items, customer detail, and A/P cleared items, supported by PDF evidence.
-- **Q: Are you claiming exported SAP source code?** A: No. The public repo focuses on documented design logic and educational samples where applicable.
-- **Q: Why join master and line-item tables?** A: Line-item tables provide transaction details, while master tables provide readable customer or vendor context.
-- **Q: What is the purpose of selection screens?** A: They let users filter by company code, account ranges, dates, and clearing status so the report answers a specific business question.
-- **Q: Why use ALV-style output?** A: It gives business users sortable and filterable tabular results suitable for accounting review.
-
 ## Limitations
 - Academic training-system scenario.
 - Not production implementation.
