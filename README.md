@@ -29,17 +29,21 @@ The PDF files are retained as academic evidence. They may contain academic ident
 
 ## How to Review This Repository
 
-1. Start with the module README files to understand each business process without opening the PDFs.
-2. Use [`docs/evidence_index.md`](docs/evidence_index.md) to map each PDF to the process evidence it supports.
-3. Review [`docs/portfolio_interview_handbook.md`](docs/portfolio_interview_handbook.md) for interview-ready explanations and boundaries.
-4. Run the analytics extension from the repository root:
+### Recruiter / Hiring Manager Path
+
+1. Start with [`docs/recruiter_review_checklist.md`](docs/recruiter_review_checklist.md) for the fastest review path and honest positioning language.
+2. Review [`00_Portfolio_Executive_Showcase/README.md`](00_Portfolio_Executive_Showcase/README.md) for the executive business-process narrative.
+3. Use [`docs/evidence_index.md`](docs/evidence_index.md) to map each PDF to the process evidence it supports.
+4. Review [`docs/portfolio_interview_handbook.md`](docs/portfolio_interview_handbook.md) for interview-ready explanations and boundaries.
+5. Run the analytics extension from the repository root:
 
    ```bash
    pip install -r requirements.txt
    python analytics/python/erp_kpi_analysis.py
+   pytest
    ```
 
-5. Open [`analytics/outputs/kpi_summary.csv`](analytics/outputs/kpi_summary.csv) and [`analytics/outputs/exception_report.csv`](analytics/outputs/exception_report.csv) to review generated KPI outputs.
+6. Open [`analytics/outputs/kpi_summary.csv`](analytics/outputs/kpi_summary.csv) and [`analytics/outputs/exception_report.csv`](analytics/outputs/exception_report.csv) to review generated KPI outputs.
 
 ## Repository Structure
 
@@ -50,7 +54,7 @@ The PDF files are retained as academic evidence. They may contain academic ident
 | [`03_Production_Planning_PP/`](03_Production_Planning_PP/) | PP make-to-stock process documentation and academic PDF evidence |
 | [`04_ABAP_Development/`](04_ABAP_Development/) | ABAP reporting design documentation and academic PDF evidence |
 | [`05_Human_Capital_Management_HCM/`](05_Human_Capital_Management_HCM/) | HCM supporting academic group project documentation |
-| [`docs/`](docs/) | Interview handbook, KPI catalog, SAP table reference, evidence index, and recruiter summary |
+| [`docs/`](docs/) | Interview handbook, KPI catalog, SAP table reference, evidence index, recruiter checklist, and recruiter summary |
 | [`analytics/`](analytics/) | Runnable synthetic SAP-style analytics extension |
 
 ## Personal Contribution Statement

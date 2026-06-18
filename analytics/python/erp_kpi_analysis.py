@@ -1,16 +1,18 @@
+from __future__ import annotations
+
 """Generate SAP-style ERP KPI outputs from synthetic CSV data.
 
 The input files are synthetic training assets for portfolio demonstration.
 They are not SAP exports and do not contain company or client data.
 """
 from pathlib import Path
-
-try:
-    import pandas as pd
-except ModuleNotFoundError:  # Allows portfolio outputs in constrained environments without installed dependencies.
-    pd = None
 import csv
 from collections import defaultdict
+import importlib
+import importlib.util
+from typing import Any
+
+pd: Any = importlib.import_module("pandas") if importlib.util.find_spec("pandas") else None
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT_DIR / "analytics" / "data" / "synthetic"
