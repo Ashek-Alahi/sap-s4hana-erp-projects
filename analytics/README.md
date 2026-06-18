@@ -12,7 +12,13 @@ From the repository root:
 ```bash
 pip install -r requirements.txt
 python analytics/python/erp_kpi_analysis.py
+pytest
 ```
+
+
+## Quality Checks
+
+The analytics functions are covered by lightweight regression tests in `tests/test_erp_kpi_analysis.py`. These tests verify FI balance aggregation, MM exception detection, PP variance calculation, and CO cost center summarization so reviewers can confirm the logic is reproducible.
 
 ## Business Questions Answered
 | Area | Question |
