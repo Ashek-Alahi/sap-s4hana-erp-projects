@@ -2,7 +2,7 @@
 
 ## Objective
 
-This roadmap defines how the SAP S/4HANA portfolio can be extended into a stronger SQL, Python, and business analytics project without altering the original academic project files. The goal is to turn SAP process knowledge into practical analytics assets that can be discussed in interviews and demonstrated on GitHub.
+This roadmap defines how the SAP S/4HANA portfolio can be extended into a stronger SQL, Python, and business analytics project without altering the original academic project files. The goal is to turn SAP process knowledge into practical analytics assets that can be demonstrated on GitHub.
 
 ---
 
@@ -101,7 +101,6 @@ Use a simple star-schema mindset for analytics demonstrations:
 | 2 | Mock SAP-style sample data | Makes the repo runnable without SAP system access |
 | 3 | Python KPI notebooks | Demonstrates data analytics capability |
 | 4 | Dashboard requirements document | Shows business analyst communication skills |
-| 5 | Interview story documentation | Helps explain project value clearly |
 
 ---
 

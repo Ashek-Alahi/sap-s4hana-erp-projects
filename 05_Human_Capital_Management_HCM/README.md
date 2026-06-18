@@ -33,13 +33,6 @@ HCM matters because workforce structure affects reporting, access, staffing, and
 - Position-to-unit alignment.
 - Documentation completeness.
 
-## Interview Defense
-- **Q: How deep is your HCM experience?** A: HCM is a supporting academic group project in this portfolio; my public positioning focuses on process explanation and documentation rather than overstating specialization.
-- **Q: What HCM areas were covered?** A: Organizational Management, Personnel Administration, qualifications, position structures, and hiring action documentation.
-- **Q: Why include HCM in an ERP portfolio?** A: It shows cross-functional ERP awareness beyond finance and logistics.
-- **Q: What did qualifications demonstrate?** A: They showed how role or employee capabilities can be structured and assigned in HR master data.
-- **Q: What is the honest contribution statement?** A: Personal contribution: documentation, process explanation, portfolio translation, and business analysis framing based on academic project evidence.
-
 ## Limitations
 - Academic training-system scenario.
 - Not production implementation.
