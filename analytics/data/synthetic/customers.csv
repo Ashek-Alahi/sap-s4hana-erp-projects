@@ -1,0 +1,4 @@
+customer_id,customer_name,country,synthetic_data_note
+C1000,North Ridge Cycles,US,Synthetic SAP-style sample data only
+C1001,Metro Bike Supply,US,Synthetic SAP-style sample data only
+C1002,Lakeside Retail Group,US,Synthetic SAP-style sample data only

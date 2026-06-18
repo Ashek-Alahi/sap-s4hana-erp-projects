@@ -100,13 +100,13 @@ Can the organization control the full procurement cycle from supplier selection 
 ### 3. Production Planning
 
 **Business question answered:**  
-Can production demand be planned, converted into supply requirements, executed through production orders, and reflected in finished goods inventory?
+Can production demand be target, converted into supply requirements, executed through production orders, and reflected in finished goods inventory?
 
 **Evidence demonstrated:**
 
 - Material planning views.
 - BOM and routing usage.
-- Planned independent requirements.
+- Target independent requirements.
 - MRP execution.
 - Production order creation and release.
 - Goods issue, confirmation, and goods receipt.
@@ -114,7 +114,7 @@ Can production demand be planned, converted into supply requirements, executed t
 
 **Analytics value:**
 
-- Planned vs. actual production quantity.
+- Target vs. actual production quantity.
 - MRP exception monitoring.
 - Component availability.
 - Production order completion rate.
@@ -175,7 +175,7 @@ Can HR organizational structures, qualifications, and hiring actions be configur
 | MM | PO-to-GR Cycle Time | Measures procurement execution speed | How long does it take from PO creation to goods receipt? |
 | MM | Three-Way Match Exception Rate | Identifies PO, GR, and invoice mismatches | Which invoices require manual investigation? |
 | MM | Vendor Price Variance | Supports sourcing decisions | Which vendor offered the best evaluated price? |
-| PP | Planned vs. Produced Quantity | Measures production execution accuracy | Did production meet the planned requirement? |
+| PP | Target vs. Produced Quantity | Measures production execution accuracy | Did production meet the target requirement? |
 | PP | Component Shortage Count | Identifies production risk | Which components block production orders? |
 | ABAP | Report Filter Coverage | Measures report usability | Can users analyze by company code, customer, or vendor? |
 | HCM | Qualification Coverage | Measures workforce readiness | Which positions have required qualifications assigned? |

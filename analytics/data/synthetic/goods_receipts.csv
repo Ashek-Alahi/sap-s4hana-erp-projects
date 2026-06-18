@@ -1,0 +1,5 @@
+gr_id,po_id,gr_date,received_quantity,synthetic_data_note
+500000001,450000001,2026-01-18,100,Synthetic SAP-style sample data only
+500000002,450000002,2026-01-24,140,Synthetic SAP-style sample data only
+500000003,450000003,2026-01-30,200,Synthetic SAP-style sample data only
+500000004,450000004,2026-01-19,100,Synthetic SAP-style sample data only

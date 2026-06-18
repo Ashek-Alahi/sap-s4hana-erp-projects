@@ -28,7 +28,7 @@ This matrix helps recruiters, hiring managers, and interviewers quickly understa
 | FI | G/L, A/P, A/R, payments, balances | Company code, posting period, G/L accounts, vendor/customer documents | Open item aging, payment clearing, balance monitoring |
 | CO | Cost center accounting and allocations | Cost centers, FI actual postings, assessment cycles | Cost center actuals, allocation analysis, expense control |
 | MM | Procure-to-pay | Vendor, material, PR, RFQ, PO, GR, invoice, payment | Three-way match, vendor comparison, duplicate PO detection |
-| PP | Plan-to-produce | BOM, routing, MRP, production order, GI, confirmation, GR | Planned vs. actual output, component shortages, inventory readiness |
+| PP | Plan-to-produce | BOM, routing, MRP, production order, GI, confirmation, GR | Target vs. actual output, component shortages, inventory readiness |
 | ABAP | Custom financial reporting | ALV reports, joins, select-options, customer/vendor cleared items | Self-service reporting, exception filters, audit review |
 | HCM | Hire-to-workforce structure | Org units, positions, qualifications, hiring action | Qualification coverage, staffing visibility, recruitment funnel |
 

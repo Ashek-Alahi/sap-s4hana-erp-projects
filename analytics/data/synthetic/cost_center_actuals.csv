@@ -1,0 +1,6 @@
+controlling_area,cost_center,posting_period,cost_element,actual_amount,currency,synthetic_data_note
+NA00,CC-FIN,2026-01,610000,3200,USD,Synthetic SAP-style sample data only
+NA00,CC-PROC,2026-01,620000,4700,USD,Synthetic SAP-style sample data only
+NA00,CC-MFG,2026-01,630000,15800,USD,Synthetic SAP-style sample data only
+NA00,CC-MFG,2026-02,630000,17200,USD,Synthetic SAP-style sample data only
+NA00,CC-HR,2026-02,640000,2600,USD,Synthetic SAP-style sample data only

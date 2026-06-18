@@ -1,205 +1,52 @@
-# SAP HCM (Human Capital Management) – Human Resource Management System Development
-
-## Project Overview
-
-This project demonstrates the implementation of core Human Resource Management (HRM) functions in SAP HCM. The objective was to configure organizational management structures, create employee qualifications, assign competencies, and perform employee hiring processes using standard SAP HCM transactions.
-
----
-
-## Team Members
-
-| Name                        | Student ID |
-| --------------------------- | ---------- |
-| Alahi Ashek                 | M23W0308   |
-| Angage Isuru Lakshan Perera | M23W0147   |
-| Thapa Anjuli                | M23W7501   |
-
----
-
-## SAP Module
-
-**SAP HCM (Human Capital Management)**
-
-Key Areas Covered:
-
-* Organizational Management (OM)
-* Personnel Administration (PA)
-* Qualifications Management
-* Recruitment & Employee Hiring
-
----
-
-## Project Objectives
-
-* Configure organizational units and staffing structures.
-* Create and manage employee qualifications.
-* Assign qualifications to positions.
-* Hire new employees using SAP HCM Personnel Administration.
-* Demonstrate a simplified recruitment and onboarding workflow.
-
----
-
-## SAP HCM Overview
-
-SAP Human Capital Management (HCM) helps organizations manage:
-
-* Personnel Administration
-* Organizational Management
-* Payroll Processing
-* Benefits Administration
-* Time Management
-* Recruitment and Talent Acquisition
-
----
-
-## Business Scenario
-
-The organization required modifications to its security department structure and recruitment process.
-
-### Requirements
-
-* Change organizational start date to **01.10.2023**
-* Create new sub-organizational units
-* Create security positions
-* Transfer positions between organizational units
-* Create and assign qualifications
-* Hire a new employee
-
----
-
-## Project Activities
-
-### 1. Organizational Management (PPOME)
-
-#### Created Sub-Organizational Units
-
-Under **Security Organizational Unit**:
-
-* Plant Security
-* IT Security
-
-#### Created Positions
-
-Under **IT Security**:
-
-* Security Guard
-* Security Manager
-
-#### Position Transfer
-
-Transferred positions:
-
-* 078 Security Guard
-* 078 Security Manager
-
-To:
-
-* 078 Plant Security
-
-**Transaction Code:** `PPOME`
-
----
-
-### 2. Qualification Management (OOQA)
-
-#### Qualification Group Created
-
-* 078 Soft Skills
-
-#### Qualification Created
-
-* 078 IT Affinity
-
-**Transaction Code:** `OOQA`
-
----
-
-### 3. Qualification Assignment (PPPM)
-
-Assigned:
-
-| Qualification   | Proficiency Level |
-| --------------- | ----------------- |
-| 078 IT Affinity | Very Good         |
-
-**Transaction Code:** `PPPM`
-
----
-
-### 4. Personnel Administration – Hiring Process (PA40)
-
-Performed employee hiring process using:
-
-**Transaction Code:** `PA40`
-
-Activities:
-
-* New Hire Action
-* Employee Master Data Creation
-* Personnel Assignment
-* Employment Record Creation
-
----
-
-## Recruitment Process in SAP HCM
-
-1. Identify Job Requirements
-2. Create Job Opening
-3. Advertise Position
-4. Receive Applications
-5. Review Candidate Profiles
-6. Conduct Interviews
-7. Select Candidate
-8. Hire Employee
-9. Employee Onboarding
-
----
-
-## Transaction Codes Used
-
-| Transaction | Description                |
-| ----------- | -------------------------- |
-| PPOME       | Organization and Staffing  |
-| OOQA        | Create Qualifications      |
-| PPPM        | Assign Qualifications      |
-| PA40        | Personnel Actions (Hiring) |
-
----
-
-## Learning Outcomes
-
-Through this project, we learned how to:
-
-* Manage organizational structures in SAP HCM.
-* Create and maintain qualifications.
-* Assign competencies to employees and positions.
-* Execute personnel hiring actions.
-* Understand recruitment workflows within SAP ERP.
-
----
-
-## Project Contribution
-
-| Member                                 | Contribution                                               |
-| -------------------------------------- | ---------------------------------------------------------- |
-| Angage Isuru Lakshan Perera (M23W0147) | SAP System Configuration and Execution                     |
-| Alahi Ashek (M23W0308)                 | Documentation, Presentation Preparation, Slide Development |
-| Thapa Anjuli (M23W7501)                | Information Collection and Project Support                 |
-
----
-
-## Technologies Used
-
-* SAP ERP HCM
-* SAP GUI
-* Organizational Management
-* Personnel Administration
-* Qualifications Management
-
----
-
-## Project Status
-
-✅ Completed
-
-Academic ERP Project – SAP Human Capital Management (HCM)
+# SAP HCM Supporting Academic Group Project
+
+## Portfolio Summary
+This HCM project is positioned as a supporting academic group project. It demonstrates process understanding for Organizational Management, Personnel Administration, qualifications, position structure, and hiring action documentation.
+
+## Business Problem
+HR teams need a reliable structure for organizational units, positions, qualifications, and hiring actions so workforce data supports reporting, staffing decisions, and role assignments.
+
+## Process Scope
+- Review organizational start date requirement.
+- Create or modify sub-organizational units.
+- Create security-related positions.
+- Transfer positions between organizational units.
+- Create qualification group and qualification.
+- Assign qualification to position or person.
+- Document hiring action in Personnel Administration.
+- Present process evidence as an academic group project.
+
+## SAP Configuration / Execution Evidence
+- Transactions documented include `PPOME`, `OOQA`, `PPPM`, and hiring action steps in SAP HCM.
+- Evidence focuses on OM, PA, qualifications, position structure, and hiring action.
+- Academic group project. Public version focuses on process evidence and personal learning outcomes.
+- Personal contribution: documentation, process explanation, portfolio translation, and business analysis framing based on academic project evidence.
+
+## Business Value
+HCM matters because workforce structure affects reporting, access, staffing, and compliance processes. This project supports the broader ERP portfolio by showing that finance, procurement, production, and HR data all depend on controlled master data and process execution.
+
+## KPIs / Controls
+- Position coverage.
+- Qualification coverage.
+- Hiring action completion.
+- Organizational assignment accuracy.
+- Position-to-unit alignment.
+- Documentation completeness.
+
+## Interview Defense
+- **Q: How deep is your HCM experience?** A: HCM is a supporting academic group project in this portfolio; my public positioning focuses on process explanation and documentation rather than overstating specialization.
+- **Q: What HCM areas were covered?** A: Organizational Management, Personnel Administration, qualifications, position structures, and hiring action documentation.
+- **Q: Why include HCM in an ERP portfolio?** A: It shows cross-functional ERP awareness beyond finance and logistics.
+- **Q: What did qualifications demonstrate?** A: They showed how role or employee capabilities can be structured and assigned in HR master data.
+- **Q: What is the honest contribution statement?** A: Personal contribution: documentation, process explanation, portfolio translation, and business analysis framing based on academic project evidence.
+
+## Limitations
+- Academic training-system scenario.
+- Not production implementation.
+- No company-sensitive data.
+- Synthetic analytics data is used only in the separate analytics extension.
+- PDF evidence may contain academic identifiers from the original coursework.
+- HCM is presented as a supporting academic group project.
+
+## Evidence Files
+- `HRM Final project-Edited.pdf`
