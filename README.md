@@ -14,7 +14,6 @@ The PDF files are retained as academic evidence. They may contain academic ident
 - SAP FI/CO Junior Consultant
 - SAP MM Analyst
 - SAP PP Analyst
-- ERP Reporting / ABAP Trainee
 - Business / Data Analyst with ERP focus
 
 ## Portfolio Project Summary
