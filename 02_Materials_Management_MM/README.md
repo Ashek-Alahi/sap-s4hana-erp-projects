@@ -37,13 +37,6 @@ MM matters because it protects company cash and inventory. A controlled P2P proc
 - Vendor comparison documentation.
 - Payment clearing status.
 
-## Interview Defense
-- **Q: What is procure-to-pay?** A: It is the end-to-end process from purchase need through supplier selection, PO, goods receipt, invoice verification, and vendor payment.
-- **Q: Why is three-way matching important?** A: It compares PO, goods receipt, and invoice so companies do not pay for incorrect prices or quantities.
-- **Q: How would you explain the duplicate PO issue?** A: I would present it as a control-risk finding because duplicate purchasing can overstate stock and create payment or reconciliation issues.
-- **Q: What does GR/IR represent?** A: GR/IR is a clearing concept used when goods receipt and invoice receipt occur at different times and need reconciliation.
-- **Q: What business value did vendor comparison add?** A: It showed sourcing discipline by comparing quotations before committing to a purchase order.
-
 ## Limitations
 - Academic training-system scenario.
 - Not production implementation.
